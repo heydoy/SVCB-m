@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+li,
+li:hover {
+    list-style: none;
+}
