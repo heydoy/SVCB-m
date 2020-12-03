@@ -7,6 +7,9 @@
     --signature-color: #3F3FA8;
     --white-color: #ffffff;
     --box-color: #F5F5F5;
+    --hover-custom-color: #0065FF;
+    --hover-white-color: #01D4FF;
+
 
 
 }
@@ -147,12 +150,30 @@ small {
     color: var(--white-color);
 }
 
-.btn_white_border {
+.btn_white_outline {
     border: 2px solid var(--white-color);
     color: var(--white-color);
 }
 
-.btn_custom_border {
+.btn_custom_outline {
     border: 2px solid var(--signature-color);
     color: var(--signature-color);
+}
+
+.btn_custom_color:hover,
+.btn_custom_color:focus,
+.btn_custom_color:active {
+    background-color: var(--hover-custom-color);
+}
+.btn_white_outline:hover,
+.btn_white_outline:focus,
+.btn_white_outline:active {
+    border: var(--hover-white-color);
+    color: var(--hover-white-color);
+}
+.btn_custom_outline:hover,
+.btn_custom_outline:focus,
+.btn_custom_outline:active {
+    border: var(--hover-custom-color);
+    color: var(--hover-custom-color);
 }
