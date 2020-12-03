@@ -1,14 +1,158 @@
-* {
-    box-sizing: border-box;
+
+/*
+   Custom Properties 사용자 지정 속성 선언 
+*/
+
+:root {
+    --signature-color: #3F3FA8;
+    --white-color: #ffffff;
+    --box-color: #F5F5F5;
+
 
 }
 
+/*
+  Font 서체 설정
+*/
+
+@font-face {
+    font-family: 'InfinitySans';
+    font-style: normal;
+    font-weight: 400;
+    src : url('../fonts/InfinitySansR-Regular.ttf');
+}
+    
+@font-face {
+    font-family: 'InfinitySans';
+    font-style: normal;
+    font-weight: 600;
+    src : url('../fonts/InfinitySans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'InfinitySans';
+    font-style: condensed;
+    font-weight: 600;
+    src : url('../fonts/InfinitySans-CondBold.ttf');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/GmarketSansTTFLight.ttf');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/GmarketSansTTFMedium.ttf');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/GmarketSansTTFBold.ttf');
+}
+
+/*
+  Default 기본 설정 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
 a,
-a:hover {
+a:hover,
+a:focus,
+button {
     text-decoration: none;
 }
 
 li,
 li:hover {
     list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'GmarketSans', sans-serif;
+}
+
+/*  */
+h1 {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'InfinitySans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.75px;
+
+}
+
+p.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+
+
+small {
+    font-size: 11px;
+}
+
+/*
+   커스텀 스타일
+*/
+
+.text_white {
+    color: var(--white-color);
+}
+
+.text_custom {
+    color: var(--signature-color);
+}
+
+
+.btn {
+    
+    padding: 12px 18px;
+    font-family: 'GmarketSans';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn_rounded {
+    border-radius : 19px;
+}
+
+.btn_custom_color {
+    background-color: var(--signature-color);
+    color: var(--white-color);
+}
+
+.btn_white_border {
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.btn_custom_border {
+    border: 2px solid var(--signature-color);
+    color: var(--signature-color);
 }
