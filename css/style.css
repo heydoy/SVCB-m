@@ -4,6 +4,7 @@
 */
 
 :root {
+    --font-default-color: #1A2E35;
     --signature-color: #3F3FA8;
     --white-color: #ffffff;
     --box-color: #F5F5F5;
@@ -64,9 +65,7 @@
   Default 기본 설정 
 */
 
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     overflow-x: hidden;
@@ -107,6 +106,7 @@ p {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.75px;
+    color: var(--font-default-color);
 
 }
 
@@ -176,4 +176,32 @@ small {
 .btn_custom_outline:active {
     border: var(--hover-custom-color);
     color: var(--hover-custom-color);
+}
+
+
+/*
+   Navbar
+*/
+
+.custom_nav_menu {
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 0px;
+    background-color: var(--white-color) !important;
+
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+.navbar button {
+    border: none !important;
+    padding: 0;
 }

@@ -15,10 +15,10 @@
 
     <!-- Icon 페이지 내 아이콘 -->
     <link href="css/mobiriseicons.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/materialdesignicons.min.css" >
 
     <!-- Bootstrap 부트스트랩 -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
     <!-- Custom Style 스타일-->
     <link rel="stylesheet" href="./css/style.css">
@@ -26,18 +26,32 @@
 </head>
 <body>
     <!-- Navbar 내비게이션 바 -->
-    <nav>
-        <ul>
-            <li class="nav-item"><a href="#main" class="nav-link">메인</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">회사소개</a></li>
-            <li class="nav-item"><a href="#app" class="nav-link">바로앱</a></li>
-            <li class="nav-item"><a href="#iptelephony" class="nav-link">IP Telephony</a></li>
-            <li class="nav-item"><a href="#iot" class="nav-link">IoT</a></li>
-            <li class="nav-item"><a href="#fintech" class="nav-link">핀테크</a></li>
-            <li class="nav-item"><a href="#etc" class="nav-link">기타</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">고객센터</a></li>
-        </ul>
+    <nav class="navbar fixed-top navbar-light bg-light custom_nav_menu">
+        <div class="container">
+            <a href="index.html" class="navbar-brand logo">
+                <img src="./images/logo.png" alt="" class="img-fluid" alt="logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="#main" class="nav-link">메인</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">회사소개</a></li>
+                    <li class="nav-item"><a href="#app" class="nav-link">바로앱</a></li>
+                    <li class="nav-item"><a href="#iptelephony" class="nav-link">IP Telephony</a></li>
+                    <li class="nav-item"><a href="#iot" class="nav-link">IoT</a></li>
+                    <li class="nav-item"><a href="#fintech" class="nav-link">핀테크</a></li>
+                    <li class="nav-item"><a href="#etc" class="nav-link">기타</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">고객센터</a></li>
+                </ul>
+                <button class="btn_custom_outline btn btn_rounded navbar-btn" onclick="location.href='#'" >
+                    회원가입/로그인
+                </button>
+            </div>  
+        </div>
     </nav>
     <!-- Main 메인 -->
     <section id="main">
